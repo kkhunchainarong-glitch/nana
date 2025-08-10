@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟาร์มผักอารมณ์ดี</title>
+    <style>
+        body { font-family: 'Kanit', sans-serif; margin: 0; padding: 0; background: #f9fdf9; color: #333; }
+        header { background: #4CAF50; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        header h1 { margin: 0; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; }
+        .hero { background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover; color: white; text-align: center; padding: 100px 20px; }
+        .hero h2 { font-size: 2.5em; }
+        .hero button { background: #FF9800; border: none; padding: 15px 25px; margin: 10px; color: white; font-size: 1em; cursor: pointer; border-radius: 5px; }
+        section { padding: 40px 20px; max-width: 1100px; margin: auto; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .product { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .product img { width: 100%; height: 200px; object-fit: cover; }
+        .product h3 { margin: 10px 0; }
+        footer { background: #333; color: white; padding: 20px; text-align: center; }
+        footer a { color: #ffeb3b; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ฟาร์มผักอารมณ์ดี</h1>
+        <nav>
+            <a href="#home">หน้าแรก</a>
+            <a href="#howto">วิธีการปลูก</a>
+            <a href="#products">สินค้า</a>
+            <a href="#about">เกี่ยวกับเรา</a>
+            <a href="#contact">ติดต่อเรา</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>ผักไฮโดรสดใหม่จากฟาร์มถึงบ้าน</h2>
+        <button onclick="document.getElementById('howto').scrollIntoView({behavior:'smooth'});">ดูวิธีปลูก</button>
+        <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'});">สั่งซื้อผัก</button>
+    </section>
+
+    <section id="products">
+        <h2>สินค้ายอดนิยม</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://pic.in.th/image/hydroponic-lettuce.cjHUgo#google_vignette"alt="กรีนโอ๊ค">
+                <h3>กรีนโอ๊ค</h3>
+                <p>฿40 / 250g</p>
+            </div>
+            <div class="product">
+                <img src="https://github.com/kkhunchainarong-glitch/na/blob/main/hydroponic-lettuce.jpg" alt="เรดโอ๊ค">
+                <h3>เรดโอ๊ค</h3>
+                <p>฿45 / 250g</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1600788611493-82d4e717b0db" alt="ผักสลัดรวม">
+                <h3>ชุดผักสลัดรวม</h3>
+                <p>฿120 / 1kg</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="howto">
+        <h2>วิธีการปลูกผักไฮโดรโปนิกส์</h2>
+        <ol>
+            <li>เตรียมอุปกรณ์ เช่น รางปลูก, ถังน้ำ, ปั๊มน้ำ</li>
+            <li>เพาะเมล็ดในฟองน้ำหรือวัสดุเพาะ</li>
+            <li>ย้ายต้นกล้าลงรางปลูก</li>
+            <li>ดูแลด้วยการให้น้ำและสารอาหารสม่ำเสมอ</li>
+            <li>เก็บเกี่ยวเมื่ออายุเหมาะสม</li>
+        </ol>
+    </section>
+
+    <section id="about">
+        <h2>เกี่ยวกับเรา</h2>
+        <p>HydroFarm บ้านเรา เป็นฟาร์มครอบครัวที่ตั้งใจปลูกผักไฮโดรโปนิกส์ปลอดสาร เพื่อส่งตรงถึงมือคุณ เราใช้เทคนิคการปลูกที่เป็นมิตรต่อสิ่งแวดล้อม และควบคุมคุณภาพในทุกขั้นตอน</p>
+    </section>
+
+    <section id="contact">
+        <h2>ติดต่อเรา</h2>
+        <p>โทร: 085-2678874</p>
+        <p>Line: @hydrofarm</p>
+        <p>Email: info@hydrofarm.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HydroFarm บ้านเรา | <a href="#">Facebook</a> | <a href="#">Line</a></p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
